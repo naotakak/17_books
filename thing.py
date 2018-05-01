@@ -13,5 +13,4 @@ def totalFreq(book, words):
     return reduce(lambda i, x: i + x, [singleFreq(book, word) for word in words])
 
 def mostFreq(book):
-    li = list(set(book.split(' ')))
-    return reduce(lambda a, b: a if (a > b) else b, li)
+    return reduce((lambda x, y: x if singleFreq(book, x) > singleFreq(book, y) else y), book.split(" "))
