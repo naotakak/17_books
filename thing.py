@@ -1,6 +1,6 @@
 from functools import reduce
 
-f = open('p583.txt', 'rU')
+f = open('pg583.txt', 'rU')
 s = f.read()
 s = s.replace(",", "").replace(".", "").replace("?", "").replace("!", "").replace(":", "").replace(";", "")
 
