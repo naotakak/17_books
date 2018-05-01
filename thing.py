@@ -15,7 +15,7 @@ def totalFreq(book, words):
     return reduce(lambda i, x: i + x, [singleFreq(book, word) for word in words])
 
 def mostFreq(book):
-    return reduce((lambda x, y: x if singleFreq(book, x) > singleFreq(book, y) else y), book.split(" "))
+    return reduce((lambda x, y: x if singleFreq(book, x) > singleFreq(book, y) else y), book.split())
 
 print("singleFreq(s, 'Marian') " + str(singleFreq(s, "Marian")))
 print("totalFreq(s, ['Marian', 'Laura']) " + str(totalFreq(s, ["Marian", "Laura"])))
